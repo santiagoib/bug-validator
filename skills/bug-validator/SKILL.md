@@ -7,7 +7,7 @@ description: Validates smart contract audit findings against Code4rena judging c
 
 ## Step 1 - Display ASCII art
 
-Read the file `~/.claude/skills/bug-validator/ascii-art.txt` and print its contents exactly as-is to the terminal. Do not modify, truncate, or summarize it.
+Read the file `~/.claude/skills/bug-validator/references/ascii-art.txt` and print its contents exactly as-is to the terminal. Do not modify, truncate, or summarize it.
 
 Then print this line exactly:
 ```
