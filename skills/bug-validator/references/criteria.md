@@ -1,4 +1,4 @@
-# Code4rena Judging Criteria — Codified
+# Code4rena Judging Criteria - Codified
 
 Source: https://docs.code4rena.com/competitions/judging-criteria
 Source: https://docs.code4rena.com/competitions/severity-categorization
@@ -10,10 +10,10 @@ These are hard rules. If any applies, the finding is invalid or capped regardles
 
 | ID  | Rule | Result |
 |-----|------|--------|
-| AI-1 | Root cause is in an out-of-scope library/contract (not in how the in-scope contract uses it) | INVALID — OOS |
+| AI-1 | Root cause is in an out-of-scope library/contract (not in how the in-scope contract uses it) | INVALID - OOS |
 | AI-2 | Finding requires the user to make a mistake or enter wrong input | INVALID or QA at best |
 | AI-3 | Non-standard / weird ERC-20 token or fee-on-transfer token, unless explicitly listed as supported in scope (USDT is always in scope) | INVALID |
-| AI-4 | Admin/owner direct misuse of privileges (reckless admin mistake) | QA only — not Medium/High |
+| AI-4 | Admin/owner direct misuse of privileges (reckless admin mistake) | QA only - not Medium/High |
 | AI-5 | Approve / safeApprove front-run race condition | INVALID |
 | AI-6 | Unused view function finding | QA/Low only |
 | AI-7 | Faulty event emission with no broader on-chain impact | Capped Low |
@@ -21,7 +21,7 @@ These are hard rules. If any applies, the finding is invalid or capped regardles
 | AI-9 | Loss of dust only (rounding errors, marginal fee variations) | QA/Low only |
 | AI-10 | Loss of unmatured yield or yield in motion | Capped Medium |
 | AI-11 | Finding published in a prior audit report listed in README (acknowledged/wontfix) | OOS / Known issue |
-| AI-12 | CryptoPunks non-support | INVALID — Informational only |
+| AI-12 | CryptoPunks non-support | INVALID - Informational only |
 | AI-13 | Phishing or improper user caution | INVALID |
 
 ---
@@ -30,7 +30,7 @@ These are hard rules. If any applies, the finding is invalid or capped regardles
 
 ### High (3)
 - Assets (funds, NFTs, data, authorization) can be stolen/lost/compromised DIRECTLY
-- OR indirectly, but ONLY with a valid attack path — no hand-wavy hypotheticals
+- OR indirectly, but ONLY with a valid attack path - no hand-wavy hypotheticals
 - Loss of matured yield at real amounts → High
 - Loss of dust → QA/Low regardless
 
