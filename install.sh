@@ -3,19 +3,18 @@
 set -e
 
 COMMANDS_DIR="$HOME/.claude/commands"
-SKILLS_DIR="$HOME/.claude/skills"
+SKILLS_DIR="$HOME/.claude/skills/bug-validator"
 CLAUDE_DIR="$HOME/.claude"
 
 echo ""
-echo "Installing Bug Validator..."
+echo "Installing Bug Validator v2.0.0..."
 echo ""
 
 # ── Claude Code skill ──
-mkdir -p "$COMMANDS_DIR" "$SKILLS_DIR/bug-validator"
+mkdir -p "$COMMANDS_DIR" "$SKILLS_DIR/references"
 cp commands/bug-validator.md "$COMMANDS_DIR/bug-validator.md"
-cp skills/bug-validator/SKILL.md "$SKILLS_DIR/bug-validator/SKILL.md"
-cp skills/bug-validator/criteria.md "$SKILLS_DIR/bug-validator/criteria.md"
-cp skills/bug-validator/ascii-art.txt "$SKILLS_DIR/bug-validator/ascii-art.txt"
+cp skills/bug-validator/SKILL.md "$SKILLS_DIR/SKILL.md"
+cp skills/bug-validator/references/* "$SKILLS_DIR/references/"
 echo "✅ Claude Code skill installed → /bug-validator"
 
 # ── Python wrapper ──
